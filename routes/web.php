@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'Audi@index');
+Route::get('/', 'AudiController@index');
 
 Auth::routes();
 
