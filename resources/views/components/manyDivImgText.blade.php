@@ -1,5 +1,5 @@
 @for ($i = 0; $i < count($text); $i++)
-@component('components.text', 
+@component('components.divImgText', 
     [
         'img' => $text[$i]['img'],
         'txt' => $text[$i]['txt'],

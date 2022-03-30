@@ -5,6 +5,6 @@
     @endcomponent
     @component('components.cards', ['cards' => $cards])
     @endcomponent
-    @component('components.twoText', ['text' => $text])
+    @component('components.manyDivImgText', ['text' => $text])
     @endcomponent
 @endsection
