@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PostsTableSeeder::class);
         $this->call(PersonSeeder::class);
         $this->call(PetsSeeder::class);
+        $this->call(AddressSeeder::class);
     }
 }
