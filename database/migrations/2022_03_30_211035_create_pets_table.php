@@ -18,7 +18,7 @@ class CreatePetsTable extends Migration
             $table->string('name');
             $table->string('color');
             $table->date('date_of_birth');
-            $table->foreignId('people_id')->constrained();
+            $table->foreignId('person_id')->constrained();
             $table->timestamps();
         });
     }

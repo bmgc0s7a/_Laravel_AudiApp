@@ -19,7 +19,7 @@ class CreateAddressesTable extends Migration
             $table->string('city');
             $table->string('country');
             $table->string('zip_code');
-            $table->foreignId('people_id')->constrained()->unique();
+            $table->foreignId('person_id')->constrained()->unique();
             $table->timestamps();
         });
     }

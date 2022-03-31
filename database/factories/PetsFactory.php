@@ -10,6 +10,6 @@ $factory->define(Pets::class, function (Faker $faker) {
         'name' => $faker->name,
         'color' => $faker->colorName,
         'date_of_birth' => $faker->date(),
-        'people_id' => rand(1,50),
+        'person_id' => rand(1,50),
     ];
 });
