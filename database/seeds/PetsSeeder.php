@@ -40,7 +40,9 @@ class PetsSeeder extends Seeder
                 'name' => $names[rand(0, count($names) - 1)],
                 'color' => $colors[rand(0, count($colors) - 1)],
                 'date_of_birth' => $dateBirth[rand(0, count($dateBirth) - 1)],
-                'people_id' => rand(1, 150)
+                'people_id' => rand(1, 150),
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime()
             ]);
         }
     }

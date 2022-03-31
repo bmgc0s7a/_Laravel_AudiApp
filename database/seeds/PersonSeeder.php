@@ -40,7 +40,9 @@ class PersonSeeder extends Seeder
             \DB::table('people')->insert([
                 'name' => $namesPeople[rand(0, count($namesPeople) - 1)],
                 'date_of_birth' => $dateBirth[rand(0, count($dateBirth) - 1)],
-                'email' => $email[rand(0, count($email) - 1)]
+                'email' => $email[rand(0, count($email) - 1)],
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime()
             ]);
         }
     }
