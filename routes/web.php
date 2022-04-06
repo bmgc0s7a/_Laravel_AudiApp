@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'AudiController@index');
 
+Route::get('/players', 'PlayerController@index');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
