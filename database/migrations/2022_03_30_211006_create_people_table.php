@@ -18,6 +18,7 @@ class CreatePeopleTable extends Migration
             $table->string('name');
             $table->date('date_of_birth');
             $table->string('email');
+            $table->foreignId('addresses_id')->constrained()->unique();
             $table->timestamps();
         });
     }

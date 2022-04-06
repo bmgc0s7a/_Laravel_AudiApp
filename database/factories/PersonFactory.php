@@ -9,6 +9,7 @@ $factory->define(Person::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'date_of_birth' => $faker->date(),
-        'email' => $faker->email
+        'email' => $faker->email,
+        'addresses_id' => $faker->unique()->numberBetween(1,100)
     ];
 });
