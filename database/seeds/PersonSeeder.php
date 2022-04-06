@@ -11,7 +11,7 @@ class PersonSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Person::class,100)->create();
+        factory(\App\Person::class,50)->create();
 
         $namesPeople = [
             'Bruno', 
@@ -40,7 +40,7 @@ class PersonSeeder extends Seeder
                 'name' => $namesPeople[rand(0, count($namesPeople) - 1)],
                 'date_of_birth' => $dateBirth[rand(0, count($dateBirth) - 1)],
                 'email' => $email[rand(0, count($email) - 1)],
-                'address_id' => rand(101, 150 + 1),
+                'address_id' => rand(51, 100),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime()
             ]);

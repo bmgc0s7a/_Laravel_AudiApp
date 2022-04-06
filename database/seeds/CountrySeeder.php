@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class AddressSeeder extends Seeder
+class CountrySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class AddressSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Address::class,100)->create();
+        factory(\App\Country::class,241)->create();
     }
 }
