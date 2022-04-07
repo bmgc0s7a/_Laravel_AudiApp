@@ -1,4 +1,4 @@
-@extends('main.index');
+@extends('main.index')
 
 @section('main')
     @component('components.h1', ['text' => 'Players'])
