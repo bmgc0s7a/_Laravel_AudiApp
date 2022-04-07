@@ -3,12 +3,8 @@
 @section('main')
     @component('components.h1', ['text' => 'Players'])
     @endcomponent
-    <table>
-    @component('components.table', ['values' =>
-    ]) 
+    
+    @component('components.table', ['title' => $title, 'values' => $players]) 
     @endcomponent
-    @component('components.table', ['values' => $players]) 
-    @endcomponent
-    <table>
 @endsection
 
