@@ -4,7 +4,7 @@
     @component('components.h1', ['text' => 'Players'])
     @endcomponent
     <table>
-    @component('components.table', ['values' => $players]) 
+    @component('components.table', ['values' => $players])
     @endcomponent
     <table>
 @endsection
