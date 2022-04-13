@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use \App\Player;
+use App\Car;
 
-class PlayerSeeder extends Seeder
+class CarSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class PlayerSeeder extends Seeder
      */
     public function run()
     {
-        factory(Player::class, 50)->create();
+        factory(Car::class,100)->create();
     }
 }
