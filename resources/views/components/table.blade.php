@@ -23,5 +23,6 @@
             <td>@foreach ($value->cars as $item)
                 {{$item->name}}
             @endforeach</td>
+            <td><a href="{{asset('players/'.$value->id)}}">Show</a></td>
         </tr>
     @endforeach

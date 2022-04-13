@@ -50,7 +50,7 @@ class PlayerController extends Controller
      */
     public function show(Player $player)
     {
-        //
+        return view('pages.players.show', ['player' => $player]);
     }
 
     /**

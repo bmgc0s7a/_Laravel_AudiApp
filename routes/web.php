@@ -21,6 +21,8 @@ Route::get('/', 'AudiController@index');
 
 Route::get('/players', 'PlayerController@index');
 
+Route::get('/players/{player}', 'PlayerController@show');
+
 
 Auth::routes();
 
