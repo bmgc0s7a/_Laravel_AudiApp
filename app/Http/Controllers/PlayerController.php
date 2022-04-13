@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Player;
-use App\Classes\Text;
 use Illuminate\Http\Request;
 
 class PlayerController extends Controller
@@ -18,7 +17,6 @@ class PlayerController extends Controller
         $players = Player::all();
         //dd($players);
         return view('pages.players.index', [
-            'title' => Text::arrayTransform(array_keys($players->first()->attributesToArray())),
             'players' => $players
         ]);
     }
